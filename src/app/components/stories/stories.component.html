@@ -1,9 +1,8 @@
 <div class="container">
   <div class="row">
     <div *ngFor="let column of columns" class="col">
-      <app-card></app-card>
-      <app-card></app-card>
-      <app-card></app-card>
+      <!-- card/story -->
+      <app-card *ngFor="let story of column.stories" [story]="story"></app-card>
     </div>
   </div>
 </div>
